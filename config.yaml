@@ -1,0 +1,61 @@
+audio:
+  sample_rate: 24000
+  channels: 1
+  format: wav
+
+segmentation:
+  min_duration: 4     # seconds — drop segments shorter than this
+  max_duration: 29      # seconds — hard split at this length
+  silence_thresh_db: -40
+  min_silence_ms: 800   # ms of silence to treat as a segment boundary
+
+emotion_taxonomy:
+  - neutral
+  - formal
+  - happy
+  - sad
+  - excited
+  - angry
+  - calm
+  - whisper
+
+sources:
+  # --- Hindi (target ~40 min raw) ---
+  - id: sp01_hi_01
+    url: "https://youtu.be/v2n8Vqfn92E?si=soUOFI3s1dYEsUjN"
+    language: hi-IN
+    speaker_id: sp01
+    license: youtube-standard
+    credit: "BKShivani, Art of Growing Mentally Strong in Tough Times: Part 2: Subtitles English: BK Shivani"
+
+  - id: sp02_hi_02
+    url: "https://www.youtube.com/watch?v=tJcdf8u_pT4"
+    language: hi-IN
+    speaker_id: sp02
+    license: youtube-standard
+    credit: "Sadhana, जो होता है, अच्छे के लिए होता है | Deep Motivational Speech Hindi | Osho Style"
+  
+
+  # --- Indian English (target ~40 min raw) ---
+  - id: sp03_en_01
+    url: "https://youtu.be/3G293is403I?si=JQIiGPOxq_nv9z4b"
+    language: en-IN
+    speaker_id: sp03
+    license: youtube-standard
+    credit: "Arpit Bhayani, How do indexes make databases read faster?"
+  
+  - id: sp04_en_02
+    url: "https://www.youtube.com/watch?v=oHWegArQvsE"
+    language: en-IN
+    speaker_id: sp04
+    license: youtube-standard
+    credit: "Motivation Mentors, Priyanka Chopra's Life Advice Will Change Your Future"
+  
+  - id: sp05_en_03
+    url: "https://www.youtube.com/watch?v=LK1Hd_zjypc"
+    language: en-IN
+    speaker_id: sp05
+    license: youtube-standard
+    credit: "STILL I RISE Motivation, Sundar Pichai's BEST Speeches Of All Time"
+
+

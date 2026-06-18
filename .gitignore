@@ -1,0 +1,26 @@
+# Raw audio downloads — large, re-downloadable
+data/raw/**
+!data/raw/
+!data/raw/*/
+!data/raw/**/metadata.json
+
+# Segmented audio — large, re-generatable
+data/segments/**/*.wav
+
+# Normalized audio — on HuggingFace, no need to store here
+data/normalized/
+
+# Placeholder
+!data/.gitkeep
+
+# environment — contains API keys
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/

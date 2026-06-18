@@ -1,0 +1,15 @@
+yt-dlp>=2024.11.18
+requests>=2.31.0
+python-dotenv>=1.0.0
+pyyaml>=6.0
+pydub>=0.25.1
+pyloudnorm>=0.1.1
+soundfile>=0.12.1
+numpy>=1.24.0
+datasets>=2.19.0
+huggingface_hub>=0.23.0
+
+# ffmpeg is a system binary — install separately:
+#   Ubuntu/Debian: sudo apt install ffmpeg
+#   macOS:         brew install ffmpeg
+#   Windows:       winget install ffmpeg   (or choco install ffmpeg)
